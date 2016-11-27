@@ -11,4 +11,15 @@
     <hr>
 {% endfor %}
 </div>
+    <div class="row">
+        <div class="large-3 large-offset-5 columns">
+           <ul class="pagination">
+               {% if articles.has_previous %}
+                    <li class="arrow"><a href="/page/{{ articles.previous_page_number }}/">&laquo</a></li>
+               {% else %}
+                    <li class="arrow unavailabe"><a href="">&laquo</a></li>
+
+           </ul>
+        </div>
+    </div>
 {% endblock %}

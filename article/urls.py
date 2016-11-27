@@ -11,5 +11,6 @@ urlpatterns = [
     url(r'^articles/get/(?P<article_id>\d+)/$', article),
     url(r'^articles/addlike/(?P<article_id>\d+)/$', addlike),
     url(r'^articles/addcomment/(?P<article_id>\d+)/$', addcomment),
+    url(r'^page/(\d+)/$', articles),
     url(r'^$', articles)
 ]
